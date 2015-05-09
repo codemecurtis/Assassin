@@ -1,0 +1,23 @@
+/*
+Errno::ENOENT: No such file or directory - lib/assassin.scss
+
+Backtrace:
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:482:in `read'
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin.rb:108:in `method_missing'
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Users/curtisseaton/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - lib/assassin.scss"; }
