@@ -371,7 +371,7 @@ div {
 .container {
   margin: 0 0 1% 0;
   position: relative;
-  max-width: 1200px;
+  max-width: 768px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
