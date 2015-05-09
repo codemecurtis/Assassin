@@ -1,12 +1,13 @@
 @import "variables";
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 .debug{
 	border: 1px solid #FF0000;
 }
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 div{
   height: 50px;
   margin-bottom: 1%;
@@ -14,62 +15,67 @@ div{
 
 $pad: 1%;
 
-.container {
-  margin: 0 0 $pad 0;
-  position: relative;
-  max-width: $max-width;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-  
-  &:after {
-    /* Or @extend clearfix */
-    content: "";
-    display: table;
+@media (min-width: 400px){}
+@media (min-width: 600px){}
+@media (min-width: 960px) {
+
+  .container {
+    margin: 0 0 $pad 0;
+    position: relative;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    
+    &:after {
+      /* Or @extend clearfix */
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  .row{
     clear: both;
   }
-}
-.row{
-  clear: both;
-}
-[class*='grid-']{
-  float: left; 
-}
-.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11{
-  margin-right: $pad;
-}
-.grid-1:last-of-type, .grid-2:last-of-type, .grid-3:last-of-type, .grid-4:last-of-type, .grid-5:last-of-type, .grid-6:last-of-type, .grid-7:last-of-type, .grid-8:last-of-type, .grid-9:last-of-type, .grid-10:last-of-type, .grid-11:last-of-type,{
-    margin-right: 0;
-}
-.grid-12{
-  width: 100%;
-}
-.grid-8{
-  width: 60.5%;
-}
-.grid-9 {
-  width: 66.23%;
-}
-.grid-3 {
-  width: 32.66%;
-}
-.grid-6 {
-  width: 49.5%;
-}
-.grid-4 {
-  width: 38.5%;
-}
-.grid-2 {
-  width: 15.83%;
-}
-.grid-1{
-  width: 7.41%;
-}
+  [class*='grid-']{
+    float: left; 
+  }
+  .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11{
+    margin-right: $pad;
+  }
+  .grid-1:last-of-type, .grid-2:last-of-type, .grid-3:last-of-type, .grid-4:last-of-type, .grid-5:last-of-type, .grid-6:last-of-type, .grid-7:last-of-type, .grid-8:last-of-type, .grid-9:last-of-type, .grid-10:last-of-type, .grid-11:last-of-type,{
+      margin-right: 0;
+  }
+  .grid-12{
+    width: 100%;
+  }
+  .grid-8{
+    width: 60.5%;
+  }
+  .grid-9 {
+    width: 66.23%;
+  }
+  .grid-3 {
+    width: 32.66%;
+  }
+  .grid-6 {
+    width: 49.5%;
+  }
+  .grid-4 {
+    width: 38.5%;
+  }
+  .grid-2 {
+    width: 15.83%;
+  }
+  .grid-1{
+    width: 7.41%;
+  }
 
-/* Opt-in outside padding */
-.grid-pad {
-  margin: $pad 0 $pad $pad;
-  [class*='grid-']:last-of-type {
-    // padding-right: $pad;
+  /* Opt-in outside padding */
+  .grid-pad {
+    margin: $pad 0 $pad $pad;
+    [class*='grid-']:last-of-type {
+      // padding-right: $pad;
+    }
   }
 }
