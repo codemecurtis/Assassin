@@ -717,6 +717,9 @@ th {
 button {
   margin: 10px; }
 
+button:focus {
+  outline: 0; }
+
 .default-btn {
   padding: 0.63em 1.55em;
   transition: 0.8s;
@@ -727,6 +730,14 @@ button {
   color: #FFFFFF; }
   .default-btn i {
     margin-right: 0.2em; }
+  .default-btn .arrow {
+    position: relative;
+    left: 0.2em;
+    display: inline-block;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent; }
 
 .default-btn:hover {
   color: #FFFFFF;
@@ -741,11 +752,47 @@ button {
   border-radius: 5px;
   font-size: 1em; }
   .default-outline-btn i {
-    margin-right: 0.2em; }
+    position: relative;
+    right: 0.3em; }
+  .default-outline-btn .arrow {
+    position: relative;
+    left: 0.2em;
+    display: inline-block;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent; }
 
-.default-outline-btn:hover {
+.default-outline-btn:hover, .default-outline-arrow-btn:hover {
   color: #FFFFFF;
   background: #066c43; }
+
+.btn-set {
+  display: inline-block;
+  position: relative; }
+  .btn-set .dropdown {
+    display: none; }
+
+.open .dropdown {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  border: 1px solid #066c43;
+  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #FFFFFF;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+.open .dropdown li {
+  padding: 0.3em 1em;
+  font-size: .8em;
+  cursor: pointer; }
+.open .dropdown li:hover {
+  background-color: rgba(6, 108, 67, 0.1); }
 
 .sm-btn {
   padding: 0.4em 1em;
@@ -757,6 +804,10 @@ button {
 
 .debug {
   border: 1px solid #FF0000; }
+
+a {
+  color: #000000;
+  text-decoration: none; }
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
