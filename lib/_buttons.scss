@@ -84,6 +84,12 @@ button:focus {outline:0;}
 		padding: 0.3em 1em;
 		font-size: .8em;
 		cursor: pointer;
+			&:first-of-type{
+				margin-top: 0.5em;
+			}
+			&:last-of-type{
+				margin-bottom: 0.5em;
+			}
 	}
 	.dropdown li:hover{
 		background-color: rgba($base-color, .1);
