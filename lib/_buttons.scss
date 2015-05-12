@@ -10,7 +10,7 @@ button:focus {outline:0;}
 	border: none;
 	border-radius: 5px;
 	font-size: 1em;
-	color: #FFFFFF;
+	color: set-btn-text-color($warning);
 		i{
 			margin-right: 0.2em;
 		}

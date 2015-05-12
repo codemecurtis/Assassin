@@ -4,6 +4,14 @@
 	box-shadow: 0px 0px 5px 0 rgba($base-color, 0.5);
 }
 
+@function set-btn-text-color($color) {
+  @if (lightness($color) > 45) {
+    @return #000000; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+
 /* Base styles for all html elements*/
 
 .shadow{
