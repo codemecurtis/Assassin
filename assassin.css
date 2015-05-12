@@ -791,6 +791,10 @@ button:focus {
   padding: 0.3em 1em;
   font-size: .8em;
   cursor: pointer; }
+  .open .dropdown li:first-of-type {
+    margin-top: 0.5em; }
+  .open .dropdown li:last-of-type {
+    margin-bottom: 0.5em; }
 .open .dropdown li:hover {
   background-color: rgba(6, 108, 67, 0.1); }
 
@@ -814,7 +818,7 @@ a {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-div {
+.grid div {
   height: 50px;
   margin-bottom: 1%; }
 
