@@ -10,7 +10,7 @@ button:focus {outline:0;}
 	border: none;
 	border-radius: 5px;
 	font-size: 1em;
-	color: set-btn-text-color($warning);
+	color: set-btn-text-color($base-color);
 		i{
 			margin-right: 0.2em;
 		}
@@ -30,6 +30,7 @@ button:focus {outline:0;}
 .cancel-outline-btn{
 	background: transparent;
 	border: 1px solid $error;
+	color: set-btn-text-color(#FFFFFF);
 }
 .cancel-btn,.cancel-outline-btn:hover{
 	background: $error;
