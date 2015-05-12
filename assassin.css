@@ -746,7 +746,7 @@ button {
 button:focus {
   outline: 0; }
 
-.default-btn, .cancel-btn {
+.default-btn, .cancel-btn, .cancel-outline-btn {
   padding: 0.63em 1.55em;
   transition: 0.8s;
   background: #4abcd1;
@@ -754,9 +754,9 @@ button:focus {
   border-radius: 5px;
   font-size: 1em;
   color: #000000; }
-  .default-btn i, .cancel-btn i {
+  .default-btn i, .cancel-btn i, .cancel-outline-btn i {
     margin-right: 0.2em; }
-  .default-btn .arrow, .cancel-btn .arrow {
+  .default-btn .arrow, .cancel-btn .arrow, .cancel-outline-btn .arrow {
     position: relative;
     left: 0.2em;
     display: inline-block;
@@ -769,13 +769,17 @@ button:focus {
   color: #FFFFFF;
   background-color: #36b4cc; }
 
-.cancel-btn {
+.cancel-outline-btn {
   background: transparent;
   border: 1px solid #cc0000; }
 
-.cancel-btn:hover {
+.cancel-btn, .cancel-outline-btn:hover {
   background: #cc0000;
+  border: 1px solid #cc0000;
   color: #ffffff; }
+
+.cancel-btn:hover {
+  background: #990000; }
 
 .default-outline-btn {
   padding: 0.5em 1.5em;
