@@ -14,6 +14,14 @@
 
 /* Base styles for all html elements*/
 
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
 .shadow{
 	@include form-shadow
 }
