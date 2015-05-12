@@ -1,0 +1,19 @@
+@mixin form-shadow{
+	-webkit-box-shadow: 0px 0px 5px 0 rgba($base-color, 0.5);
+	-moz-box-shadow: 0px 0px 5px 0 rgba($base-color, 0.5);
+	box-shadow: 0px 0px 5px 0 rgba($base-color, 0.5);
+}
+
+/* Base styles for all html elements*/
+
+.shadow{
+	@include form-shadow
+}
+
+.full-width{
+	width: 100%;
+}
+
+.rounded{
+	border-radius: 5px;
+}
