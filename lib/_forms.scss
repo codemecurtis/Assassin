@@ -1,0 +1,69 @@
+label{
+	font-size: 0.8em;
+	display: block;
+	position: relative;
+	bottom: -10px;
+}
+
+form input{
+	padding: .8em;
+	height: 2.5em;
+}
+
+form input, form textarea{
+	border: 1px solid rgba($base-color, 0.3);
+	border-radius: 5px;
+	outline: 0;
+	margin: 1em 0;
+	font-size: 0.9em;
+}
+
+form textarea{
+	height: 10em;
+	padding: .5em;
+}
+
+form input:focus, form textarea:focus{
+	border: 1px solid rgba($base-color, 0.6);
+	@include form-shadow
+}
+
+.inline-input input{
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	width: 70%;
+}
+
+.inline-btn button{
+	border: 1px solid rgba($base-color, 0.3);
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	position: relative;
+	right: .3em;
+	margin: 0;
+}
+
+.inline-input input:focus{
+	border-right: none;
+}
+
+.inline-btn .default-btn{
+	border: none;
+	padding: 0.58em 1.55em
+}
+
+.inline-btn .default-outline-btn{
+	border-left: none;
+}
+
+.sm-input{
+	font-size: 0.8em;
+	width:10em;
+	height: 2em;
+}
+
+.default-form{
+	width: 500px;
+	padding: 1.5em;
+	border: 1px solid rgba(#000000, .2);
+}
