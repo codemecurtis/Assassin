@@ -66,4 +66,7 @@ form input:focus, form textarea:focus{
 	width: 500px;
 	padding: 1.5em;
 	border: 1px solid rgba(#000000, .2);
+		.default-outline-btn, .default-btn{
+			border-width: 1px;
+		}
 }

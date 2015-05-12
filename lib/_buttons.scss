@@ -3,7 +3,7 @@ button{
 }
 button:focus {outline:0;}
 
-.default-btn{
+.default-btn, .cancel-btn{
 	padding: 0.63em 1.55em;
 	transition: 0.8s;
 	background: $base-color;
@@ -28,7 +28,14 @@ button:focus {outline:0;}
 	color: #FFFFFF;
 	background-color: darken($base-color, 5%);
 }
-
+.cancel-btn{
+	background: transparent;
+	border: 1px solid $error;
+}
+.cancel-btn:hover{
+	background: $error;
+	color: set-btn-text-color($error);
+}
 
 .default-outline-btn{
 	padding: 0.5em 1.5em;
